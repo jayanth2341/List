@@ -15,7 +15,18 @@ Sample Input:
 3
 6
 5
-Sample Output:
-The even list [2, 6]
-The odd list [1, 3, 5]
 """
+n = int(input("Enter the size of the list: "))
+elements = []
+for _ in range(n):
+    element = int(input("Enter an element: "))
+    elements.append(element)
+even_list = []
+odd_list = []
+for number in elements:
+    if number % 2 == 0:
+        even_list.append(number)
+    else:
+        odd_list.append(number)
+print("Even numbers:", even_list)
+print("Odd numbers:", odd_list)
