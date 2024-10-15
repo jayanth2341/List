@@ -15,6 +15,11 @@ Sample Input 2:
 5
 1 2 3 6 5
 4
-Sample Output 2:
-4 is not present in the given list
 """
+n = int(input("Enter the size of the list: "))
+elements = list(map(int, input("Enter the elements separated by space: ").split()))
+search_element = int(input("Enter the element to search: "))
+if search_element in elements:
+    print(f"{search_element} is present in the given list")
+else:
+    print(f"{search_element} is not present in the given list")
