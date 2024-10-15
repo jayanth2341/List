@@ -11,3 +11,8 @@ Sample Input:
 Sample Output:
 3
 """
+input_list = input("Enter list elements: ").split()
+input_list = [int(num) for num in input_list]
+value_to_count = int(input("Enter value to count: "))
+count = input_list.count(value_to_count)
+print(count)
