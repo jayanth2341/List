@@ -15,3 +15,9 @@ Sample Input
 Output
 [1, 2, 3, 4]
 """
+n = int(input("Enter the size of the list: "))
+my_list = []
+for _ in range(n):
+    element = int(input("Enter an element: "))
+   my_list.append(element)
+print(my_list)
