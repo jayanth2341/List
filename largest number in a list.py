@@ -12,6 +12,11 @@ Sample Input:
 3
 6
 5
-Sample Output:
-6
 """
+n = int(input("Enter the size of the list: "))
+elements = []
+for _ in range(n):
+    element = int(input("Enter an element: "))
+    elements.append(element)
+largest_element = max(elements)
+print("The largest element is:", largest_element)
